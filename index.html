@@ -1,23 +1,244 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="css/styles.css" type="text/css" rel="stylesheet">
-	<script src="js/jquery-3.3.1.js"></script>
-	<script src="js/scripts.js"></script>
+	<head>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="css/styles.css" type="text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Russo+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet">
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/scripts.js"></script>
+		<title>carpool</title>
+	</head>
+	<body>
+    <div id="main-page">
+      		<div class="navbar">
+      			<ul id= "navbar">
+        			<li id="home"><a href="#home">Home</a></li>
+        			<li id="get-ride"><a href="#get ride">Get Ride</a></li>
+      				<li id="contact"><a href="#contact">Offer Ride</a></li>
+        			<li id="team"><a href="#team">Team	</a></li>
+              <li id="features"><a href="#features">features	</a></li>
+              <li id="info"><a href="#info">info</a></li>
+      			</ul>
 
-	<title></title>
-</head>
-<body>
+      		</div>
+      		<div class="logo">
+      			<div class="jumbotron">
+      				<h1>CARPOOLerS</h1>
+      			</div>
+      		</div>
+  </div>
 
-	<div class="container">
-	</div>
-	<div class="container">
-	</div>	
+		<div class="about" id="about">
+				<h2><strong>FEATURES</strong></h2>
+				<div id="row1" class="row">
+					<div class="col-md-4">
+						<img src="images/startup.png" alt="">
+						<h3>DYNAMIC CARPOOLING</h3>
+						<p>Got last minute plans? Try <strong>US</strong> before booking a cab because <strong>WE</strong> shows you rides and riders available a few minutes away for a carpool. </p>
+					</div>
+					<div class="col-md-4">
+						<img src="images/verified.png" alt="">
+						<h3 id="verification" >  VERIFICATION</h3>
+						<p> We have a <strong>multi-level verification system</strong> which ensures you are travelling with trusted people. This includes Email, phone number and government issued  ID numbers. </p>
+					</div>
+					<div class="col-md-4">
+						<img src="images/meeting.png" alt="review system">
+						<h3>2-WAY REVIEW SYSTEM</h3>
+						<p>Your opinion matters. How? Offerors rate Riders, Riders rate Offerors and Riders also rate Co-Riders. Review your every experience.</p>
+					</div>
+
+				</div>
+		</div>
+    <!-- search ride -->
+			<div class="offer1"  id="offer-ride-page" >
+				<div class="offer">
+					<h2><strong>HOW TO OFFER A RIDE</strong></h2>
+					<div id="row" class="row">
+						<div class="col-md-4">
+							<img src="images/route.png" alt="">
+							<h4 id="h4"> enter start/end points</h4>
+							<p>Enter your start and end locations, select the route, enter the start time done!</p>
+						</div>
+						<div class="col-md-4">
+							<img src="images/download.png" alt="">
+							<h4>Recieve Requests</h4>
+							<p>See requests from potential Riders, view their profiles and make them a part of your ride!</p>
+						</div>
+						<div class="col-md-4">
+							<img src="images/car.png" alt="">
+							<h4>Ride Along</h4>
+							<p>Begin your ride, pickup Riders and help them reach their destinations. Rate and review your Riders. Could it be easier?</p>
+						</div>
+						<button id="search-ride-passenger" type="button" class="btn"> Offer Ride</button>
+					</div>
+				</div>
+      </div>
+        <div id="form-give-ride">
+          <h1 id="form-title">driver form</h1>
+          <form>
+               <label for="name-input-driver">name</label>
+              <input type="text" name="name-input-driver"class="form-control" id="driver-name" >
+               <label for="id-input-driver">ID</label>
+              <input type="text" name="id-input-driver"class="form-control"  id="driver-id">
+               <label for="phone-input-driver">phone number</label>
+              <input type="text" name="phone-input-drive"class="form-control" id="driver-phone" >
+               <label for="start-input-driver">start</label>
+              <input type="text" name="start-input-driver"class="form-control" id="driver-start-point" >
+               <label for="end-input-driver">end</label>
+              <input type="text" name="end-input-passenger"class="form-control" id="driver-end-point" >
+          </form>
+          <div class="form-get-ride-buttons">
+            <button type="button" class="btn" id="give-details-driver">Search passenger</button>
+            <button type="button" class="btn" id="return-driver">cancel</button>
+
+          </div>
+
+        </div>
+<!-- give drive -->
+			<div class="offer" id="search-drive-page">
+				<h2><strong>HOW TO TAKE A RIDE</strong></h2>
+				<div id="row" class="row">
+					<div class="col-md-4">
+						<img src="images/search.png" alt="">
+						<h4>search for ride</h4>
+						<p>Enter your start and end locations, start time and view the potential rides .</p>
+					</div>
+					<div class="col-md-4">
+						<img src="images/mail.png" alt="">
+						<h4>send request</h4>
+						<p>View driver and send requests for the rides you would like. Once the Offeror accepts your request, sit back and relax!</p>
+					</div>
+					<div class="col-md-4">
+						<img src="images/check.png" alt="">
+						<h4>ride along</h4>
+						<p>Get notified when the ride is started, get picked up and reach your destination like a boss!</p>
+					</div>
+					<button class="btn" type="button" class="request-ride" id="request-ride">Request Ride</button>
+        </div>
+				</div>
+			</div>
+		</div>
+      <div id="form-get-ride">
+        <h1 id="form-title">passenger form</h1>
+        <form>
+             <label for="name-input-passenger">name</label>
+            <input type="text" name="name-input-passeger"class="form-control" id="passenger-name">
+             <label for="id-input-driver">ID</label>
+            <input type="text" name="id-input-passenger"class="form-control" id="passenger-id" >
+             <label for="phone-input-passenger">phone number</label>
+            <input type="text" name="phone-input-passenger"class="form-control" id="passenger-phone" >
+             <label for="start-input-passenger">start</label>
+            <input type="text" name="start-input-passenger"class="form-control"  id="passenger-start-point">
+             <label for="end-input-passenger">end</label>
+            <input type="text" name="end-input-passenger"class="form-control" id="passenger-end-point" >
+        </form>
+          <div class="form-get-ride-buttons">
+            <button type="button" class="btn" id="give-details-passenger">Search driver</button>
+            <button type="button" class="btn" id="return-give-passenger">cancel</button>
+
+          </div>
 
 
+      </div>
+    <!-- team members -->
+		<div class="team1" id="team-members-page">
+			<div class="team">
+				<h2><strong>THE TEAM</strong></h2>
+				<div class="row">
+					<div class="col-md-3">
+						<img src="images/spy.png" alt="">
+						<h4>James Karanja</h4>
+						<p>this is that guy yes that guy ytrvgbh tfcvbnjhg fcvbnjhgvb nmkygfdsd fghjklkjhg vfcdxzx cvbnm</p>
+					</div>
+					<div class="col-md-3">
+						<img src="images/spy.png" alt="">
+						<h4>Benson Mathu</h4>
+						<p>this is that guy yes that guy ytrvgbh tfcvbnjhg fcvbnjhgvb nmkygfdsd fghjklkjhg vfcdxzx cvbnm</p>
+					</div>
+					<div class="col-md-3">
+						<img src="images/spy.png" alt="">
+						<h4>Samuel Gumbo</h4>
+						<p>this is that guy yes that guy ytrvgbh tfcvbnjhg fcvbnjhgvb nmkygfdsd fghjklkjhg vfcdxzx cvbnm</p>
+					</div>
+					<div class="col-md-3">
+						<img src="images/spy.png" alt="">
+						<h4>Paul Gaiti</h4>
+						<p>this is that guy yes that guy ytrvgbh tfcvbnjhg fcvbnjhgvb nmkygfdsd fghjklkjhg vfcdxzx cvbnm</p>
+					</div>
+          <p id="info"  >Click the button to see the results</p>
 
+          <button type="button" class="btn" id="Checks"><span id="btn-name">FINISH</span></button>
+				</div>
 
-</body>
+			</div>
+
+		</div>
+		<div class="footer"  id="footer-page">
+			<div class="container">
+				<a href="#"> <img src="images/facebook.png" alt=""></a>
+				<a href="#"> <img src="images/instagram.png" alt=""></a>
+				<a href="#"> <img src="images/twitter.png" alt=""></a>
+				<a href="#"> <img src="images/pinterest.png" alt=""></a>
+
+		</div>
+    <div class="detail" id="stores">
+      <div class="row">
+        <div class="col-md-6" >
+           <h2><u>passenger details</u></h2>
+          <ul>
+            <li id="nameP"></li>
+            <li id="idP"></li>
+            <li id="phoneP"></li>
+            <li id="startP"></li>
+            <li id="endP"></li>
+          </ul>
+
+        </div>
+        <div class="col-md-6" >
+          <h2><u>driver details</u></h2>
+         <ul>
+           <li id="nameD"></li>
+           <li id="idD"></li>
+           <li id="phoneD"></li>
+           <li id="startD"></li>
+           <li id="endD"></li>
+         </ul>
+
+      </div>
+
+      <div class="show-results">
+        <div class="jumbotron">
+
+        <div class="row1">
+            <div class="col-md-6" id="passe">
+               <h2>passengers details</h2>
+                  <h3>name <span id="custo"></span> </h3>
+                  <h3>phone <span id="custo"></span> </h3>
+                  <h3>start <span id="custo"></span> </h3>
+                  <h3>destination <span id="custo"></span> </h3>
+            </div>
+            <div class="col-md-6">
+                    <div class="col-md-6">
+                       <h2>driver details</h2>
+                          <h3>name <span id="drivo"></span> </h3>
+                          <h3>phone <span id="drivo"></span> </h3>
+                          <h3>start <span id="drivo"></span> </h3>
+                          <h3>destination <span id="drivo"></span> </h3>
+                    </div>
+
+            </div>
+
+        </div>
+
+      </div>
+
+      </div>
+
+    </div>
+
+	</body>
+
 </html>
