@@ -1,50 +1,220 @@
 body{
-  height: 900px;
+  margin:0px;
+  width: 100%;
 }
-.nav-bar{
-  background-color: #696969;
+.navbar{
+  margin-bottom: 0;
+  width: 100%;
+  border: 0;
+}
+#navbar {
+  display:flex;
+  flex-direction: row;
   height: 50px;
-}
-#news{
-  padding: 50px;
-  background-color: white;
-}
-#driver{
-  padding: 50px;
-  background-color: #C0C0C0;
-}
-#passenger{
-  padding: 50px;
-  background-color: white;
-}
-#about{
-  padding: 50px;
-  background-color: #c0c0c0;
-}
-.dark-text{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding:15px;
+  margin: 0;
+  background-color: white;
+  list-style-type: none;
+  padding-bottom: 0;
+}
 
+#navbar li {
+  padding-right:20px;
 }
-a.active{
-  margin-top: 10px;
-  padding: 20px;
-  line-height: 1.5;
-  color: yellow;
+#navbar a{
+  color: black;
 }
-.login{height: 600px;
-  background-image:url(../architecture-asphalt-blur-462867.jpg);
+.jumbotron {
+  height: 600px;
+  background-image: url("../images/background11.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-img{
-  height: 90px;
-  padding-left: 100px;
+.jumbotron h1{
+  font-family: 'Russo One', cursive;
+  color: white;
+  float: left;
+  margin-top: 0px;
+  margin-left: 50px;
+
 }
-img.images{
-  padding: 20px;
+.about{
+  height:500px;
+  width:75%;
+  margin-left: 200px;
+  margin-top: 100px;
+
+}
+.about h2{
+  margin-bottom: 50px;
+  margin-left: 360px;
+
+}
+h4{
+  margin-left: 50px;
+}
+h3{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#verification{
+  padding-left:40px;
+}
+img{
+  height: 80px;
+  width: 80px;
+  margin-left: 70px;
+}
+.row{
+  display: inline;
+}
+.offer {
+  width:75%;
+  margin-left: 200px;
+  height: 500px;
+  padding-bottom: 20px;
+  background-color: #DBDADA;
+  margin-bottom: 100px;
+  padding-top: 70px;
+}
+.offer1 {
+  background-image: url("../images/background9.jpg");
+  padding: 70px;
+}
+#btn{
+  float: right;
+  margin-top: 10px;
+  height:50px;
+  border-radius: 10%;
+  margin-right: 50px;
+}
+.offer img {
+  margin-bottom: 40px;
+}
+.offer h2{
+
+  margin-bottom: 50px;
+  margin-left: 300px;
+}
+
+.team1{
+  color:white;
+  background-image: url("../images/background5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  margin-top: -30px;
+
+}
+.team h2{
+  padding-top: 100px;
+  padding-left: 550px;
+  padding-bottom: 40px;
+}
+
+.team img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+.team h4 {
+  margin-top: 20px;
+  margin-left: 75px;
+}
+#h4{
+  margin-left:5px;
+}
+.team p{
+  margin-left: 20px
+}
+.footer{
+  height :100px;
+}
+.footer img {
+  margin: 30px;
+  margin-left: 60px;
+}
+.container{
+  margin-left: 250px;
+}
+.login-form h4{
+margin-left: 200px;
+padding-left: 0px:
+  font-size: 17px;
+  font-family:'Kavivanar',cursive;
+}
+.login-form input {
+  max-width: 500px;
+  max-height: 30px;
+
+  margin-left: 280px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+.submit-btn button{
+    margin-left: 250px;
+    max-width: 30px;
+    max-width: 100px;
+    border-color: blue;
+}
+.login-form{
+    background-image: url("../images/login.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    margin-top: -30px;
+    color: white;
+}
+.form-group{
+  padding-top: 200px;
+}
+
+#form-give-ride{
+    display:none;
+    padding-bottom: 30px;
+
+}
+.form-control{
+    max-width: 500px;
+    padding-left: 150px;
+    margin-left: 200px;
+}
+#form-get-ride{
+    display: none;
+    padding-bottom: 20px;
+}
+
+#form-title{
+  font-family:'Kaushan Script' ,cursive;
+}
+.btn{
+  border-color: #0FEEFF;
+  border-width: medium;
+}
+#stores{
+  display: none;
+}
+#Checks{
+  padding-left: 20px;
+  margin-left: 200px;
+}
+#info{
+  color: red;
+  font-family:'Hanalei Fill', cursive;
+  font-weight: bolder;
+  font-size: 26px;
+}
+#btn-name{
+  color: black;
+}
+label{
+    margin-left: 100px;
+
+}
+.w3-container{
+  display: contents;
 }
